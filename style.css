@@ -1,0 +1,76 @@
+/*CONFIGURAÇÕES INICIAIS*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-image: url('https://reviewcafe.com.br/wp-content/uploads/2020/09/tipos-degraos-de-cafe.jpg');
+  background-repeat: no-repeat;
+  
+
+}
+
+/*HEADER*/
+header {
+  padding: 15px 0;
+  background-color: black;
+  border-bottom: 3px solid #A47148;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.titulo {
+  color: #A47148;
+  font-size: 14px;
+}
+
+/*RODAPÉ/FOOTER*/
+
+footer {
+    padding: 45px 0;
+    background-color: black;
+    border-top: 3px solid #A47148;
+  }
+  
+  footer .container {
+    justify-content: center;
+  }
+  
+  footer p {
+    color: #fff;
+  }
+
+.main{
+    margin: 0 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.texto{
+    margin: 50px 0;
+}
+
+#myChart{
+    width: 250%;
+    margin-bottom: 100px;
+}
+  

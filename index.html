@@ -1,0 +1,84 @@
+<!DOCTYPE html>  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <title>Implementando o chart.js</title>
+
+  
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="titulo">
+        <h1>Implementando Chart.Js</h1>
+      </div>
+    </div>
+  </header>
+  <div class="main">
+    <div class="texto">
+      <h1>Dashboards e Chart.Js</h1>
+      <p>Gráfico implentado utilizando a biblioteca <b>Chart.Js</b> alimentado por dados fictícos para fins didáticos.</p>
+    </div>
+    <div>
+      <canvas id="myChart"></canvas>
+    </div>
+  </div>
+    
+
+      <footer>
+        <div class="container">
+          <p>By Isabela S. Nakano, aluna do 1º ADS A da <b>SPTECH</b> &copy; 2022</p>
+        </div>
+      </footer>
+</body>
+</html>
+<script>
+    const labels = [
+      '12:00',
+      '13:00',
+      '14:00',
+      '15:00',
+      '16:00',
+      '17:00',
+    ];
+  
+    const data = {
+      labels: labels,
+      datasets: [{
+    label: 'Temperatura', // legenda.
+        backgroundColor: 'rgb(231, 76, 60)', // cor da bolinha
+        borderColor: 'rgb(231, 76, 60)', // cor da linha
+        data: [30, 29, 28, 25, 22, 23], // dados, onde 0 = fevereiro e 10 = janeiro
+      },
+
+      {
+    label: 'Umidade', // legenda.
+        backgroundColor: 'rgb(93, 173, 226)', // cor da bolinha
+        borderColor: 'rgb(93, 173, 226)', // cor da linha
+        data: [80, 82, 80, 85, 80, 83], // dados, onde 0 = fevereiro e 10 = janeiro
+      }
+
+    ]
+      
+    };
+  
+    const config = {
+      type: 'line',
+      data: data,
+      options: {}
+    };
+
+    
+  </script>
+<script>
+    const myChart = new Chart(
+      document.getElementById('myChart'),
+      config
+    );
+  </script>
+          
+      
+  
